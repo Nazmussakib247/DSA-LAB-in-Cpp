@@ -1,0 +1,85 @@
+# -----------------------------
+# Compiled C/C++ binaries
+# -----------------------------
+*.exe
+*.out
+*.app
+*.bin
+*.elf
+*.dll
+*.so
+*.dylib
+
+# Object files and compiler output
+*.o
+*.obj
+*.a
+*.lib
+*.pdb
+*.ilk
+*.gch
+*.pch
+
+# -----------------------------
+# Build directories and generated build files
+# -----------------------------
+build/
+build-*/
+out/
+debug/
+release/
+Debug/
+Release/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+CTestTestfile.cmake
+Makefile
+
+# Local executable output folder used for lab compilation
+DataStructures/Array/_build/
+
+# -----------------------------
+# IDE and editor configuration
+# -----------------------------
+.vscode/
+.idea/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.code-workspace
+
+# -----------------------------
+# Local configuration and environment files
+# -----------------------------
+*.ini
+*.cfg
+*.conf
+*.local
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+# Temporary, backup, and operating-system files
+# -----------------------------
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# -----------------------------
+# Test, coverage, and generated reports
+# -----------------------------
+coverage/
+*.gcda
+*.gcno
+*.gcov
+reports/
