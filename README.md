@@ -2,9 +2,9 @@
 
 ## Coursework Documentation and Learning Journey
 
-This repository is my personal **CSE Data Structures and Algorithms lab coursework**. I am using it to document the programs I write, the concepts I learn, the mistakes I make, and the progress I achieve throughout the course.
+This repository is my personal **CSE Data Structures and Algorithms lab coursework**. I use it to record the programs I write, the concepts I learn, the mistakes I make, and the progress I achieve throughout the course.
 
-My goal is not only to collect code. I want to understand how each data structure works, why a particular algorithm is useful, how the logic is converted into C++, and how the time and space complexity affect a solution.
+My goal is not only to collect code. I want to understand how each data structure works, why an algorithm is useful, how the logic is converted into C++, and how time and space complexity affect a solution.
 
 > This README is my ongoing study record. I will update it as I complete new topics, improve old solutions, and learn better programming techniques.
 
@@ -15,141 +15,58 @@ My goal is not only to collect code. I want to understand how each data structur
 | Course | Data Structures and Algorithms Lab |
 | Program | Computer Science and Engineering |
 | Programming language | C++ |
-| Current module | Arrays |
-| Main purpose | Coursework practice, algorithm implementation, and personal learning documentation |
-| Coding style | Standalone programs with clear input, output, and complexity notes |
+| Repository purpose | Coursework practice, lab submissions, and learning progress |
 
-## Why I created this repository
+## Topic folders
 
-I created this repository to keep all of my lab work organized in one place. In the classroom, I learn the theory of a data structure or algorithm; here, I try to implement that idea from scratch. This process helps me connect the textbook explanation with an actual working program.
+The detailed programs are organized inside topic folders. Click a folder name to open that topic and see only its related source files.
 
-I am also using this repository to improve my problem-solving habits. For every program, I try to understand the problem first, write the algorithm in simple steps, identify the edge cases, implement the solution, test it with different inputs, and then review its complexity.
+| Topic | What I am practicing |
+|---|---|
+| [Array](DataStructures/Array) | Traversal, insertion, deletion, searching, sorting, rotation, and matrix operations. |
+| [Linked List](DataStructures/LinkedList) | Basic linked-list implementation and node-based operations. |
 
-## My learning journey so far
+As I continue the course, I will add more topic folders such as Stack, Queue, Tree, Graph, and other algorithm categories. Each new folder will keep its own programs so that this main README remains short and easy to navigate.
 
-| Learning stage | What I practiced | What I am learning from it |
-|---|---|---|
-| 01. Understanding arrays | Declaring, reading, and displaying array values | How multiple values of the same type are stored and accessed using indexes |
-| 02. Modifying arrays | Insertion and deletion | How shifting elements changes the logical size and position of data |
-| 03. Searching | Linear search and binary search | Why unsorted and sorted data require different searching strategies |
-| 04. Finding patterns | Maximum, minimum, frequency, and duplicate removal | How repeated traversal and comparison can solve common array problems |
-| 05. Rearranging data | Reversal, merging, and rotation | How values can be moved systematically without losing data |
-| 06. Sorting | Bubble sort, selection sort, and insertion sort | How simple sorting algorithms work and how their performance compares |
-| 07. Two-dimensional arrays | Matrix addition, transpose, and multiplication | How rows, columns, and nested loops are used to solve matrix problems |
+## How I use this repository
 
-## Current focus: Arrays
+For every lab topic, I first study the basic idea, write the algorithm in my own words, and draw a small example by hand. Then I implement the solution in C++, test normal and boundary cases, and review the time and space complexity.
 
-Arrays are my starting point for learning data structures because they introduce important programming ideas such as indexing, traversal, insertion, deletion, searching, sorting, and memory organization. I am beginning with one-dimensional arrays and then moving to two-dimensional arrays through matrix operations.
+I also try to improve earlier programs instead of treating them as finished forever. When I find a mistake or learn a better approach, I update the relevant source file and use the commit history as part of my learning record.
 
-The programs are stored in [`DataStructures/Array`](DataStructures/Array). I have used serial-numbered filenames so that I can follow the exercises in a practical-lab order. Every file is a standalone C++ program with its own `main()` function.
+## How to compile and run
 
-> **Indexing note:** In the program instructions, positions are generally counted from `1`, so the first element is position `1`. Inside the C++ code, array indexes start from `0`.
-
-## Array lab programs
-
-| Serial | File | What I am practicing |
-|---:|---|---|
-| 01 | `01_Array_Traversal.cpp` | Reading and displaying every array element |
-| 02 | `02_Array_Insertion.cpp` | Inserting a value at a selected position |
-| 03 | `03_Array_Deletion.cpp` | Deleting a value from a selected position |
-| 04 | `04_Linear_Search.cpp` | Searching an unsorted array sequentially |
-| 05 | `05_Binary_Search.cpp` | Searching a sorted array efficiently |
-| 06 | `06_Find_Maximum_Minimum.cpp` | Finding the minimum and maximum values |
-| 07 | `07_Reverse_Array.cpp` | Reversing an array by swapping values |
-| 08 | `08_Bubble_Sort.cpp` | Sorting by comparing adjacent elements |
-| 09 | `09_Selection_Sort.cpp` | Sorting by selecting the smallest remaining value |
-| 10 | `10_Insertion_Sort.cpp` | Sorting by inserting values into a sorted section |
-| 11 | `11_Merge_Two_Arrays.cpp` | Combining two arrays into one array |
-| 12 | `12_Remove_Duplicates.cpp` | Removing repeated values while preserving order |
-| 13 | `13_Frequency_of_Elements.cpp` | Counting the frequency of distinct values |
-| 14 | `14_Left_Rotate_Array.cpp` | Rotating an array to the left by `k` positions |
-| 15 | `15_Matrix_Addition.cpp` | Adding two matrices |
-| 16 | `16_Matrix_Transpose.cpp` | Converting rows into columns |
-| 17 | `17_Matrix_Multiplication.cpp` | Multiplying two compatible matrices |
-
-## How I study each lab problem
-
-For each program, I follow a small learning routine instead of directly copying the code. First, I write down what the problem is asking. Then I make a small example on paper and describe the algorithm in my own words. After that, I implement the solution in C++, test both normal and boundary cases, and check whether the output is correct.
-
-Finally, I write down the time and space complexity and record anything that was confusing during implementation. This helps me turn each program into a learning note rather than treating it as a finished submission only.
-
-### My practical checklist
-
-- Understand the input and expected output.
-- Write the algorithm or pseudocode before coding.
-- Identify boundary cases such as an empty, single-element, sorted, reverse-sorted, or repeated-value array.
-- Implement the program using clear variable names.
-- Test the program with more than one input.
-- Check the time and space complexity.
-- Note what I learned and what I need to improve.
-
-## Important lessons from the array module
-
-The insertion and deletion programs are helping me understand that inserting or removing an element from the middle of an array requires shifting other elements. Linear search works without any ordering requirement, while binary search depends on the input being sorted. The sorting programs are helping me compare different ways of arranging data, even though the three elementary sorting methods are mainly useful for learning and small inputs.
-
-The matrix programs are improving my understanding of nested loops. In matrix multiplication, I have learned that the number of columns in the first matrix must match the number of rows in the second matrix. These examples are also helping me become more careful about dimensions and boundary conditions.
-
-## How I compile and run my programs
-
-I can compile any program with a C++17-compatible compiler. From the repository root, I can use:
+Each `.cpp` file is intended to be a standalone program with its own `main()` function. From the repository root, compile any file with a C++17-compatible compiler:
 
 ```bash
 g++ -std=c++17 -Wall -Wextra -pedantic DataStructures/Array/01_Array_Traversal.cpp -o array_lab
 ./array_lab
 ```
 
-I can replace `01_Array_Traversal.cpp` with any other source file that I want to practice. On Windows, I can run the compiled program with:
+On Windows, run the generated executable with:
 
 ```powershell
 .\array_lab.exe
 ```
 
-Each program takes input from the terminal and displays the result there. The programs do not require external libraries.
+Replace the source-file path and output name according to the topic I want to practice. No external libraries are required.
 
-## Testing approach
+## Current learning progress
 
-I test the programs with small values first so that I can manually verify every step. I also try one-element arrays, already sorted arrays, reverse-sorted arrays, arrays containing duplicate values, negative values, and values that appear several times.
+- Completed the foundational Array laboratory programs.
+- Started practicing Linked List concepts.
+- Documented the repository as a personal coursework and learning journey.
+- Planned to add more data structures and algorithms step by step.
 
-For matrix programs, I test both square and rectangular matrices. Before testing multiplication, I verify that the matrix dimensions are compatible. When an input is invalid, I check whether the program gives a clear message instead of producing an incorrect result.
+## Future plan
 
-## Progress tracker
-
-| Topic | Status | My next action |
-|---|---|---|
-| Array fundamentals | Organized and practiced | Review indexing and boundary cases |
-| Array insertion and deletion | Practiced | Improve understanding of shifting operations |
-| Searching | Practiced | Compare linear and binary search with examples |
-| Sorting | Practiced | Review each algorithm step by step |
-| Array problem solving | In progress | Solve more problems without looking at existing code |
-| Linked list | Next topic | Start the next data-structure module |
-| Stack and queue | Planned | Add after completing linked-list practice |
-
-## Repository structure
-
-```text
-05_DSA/
-├── README.md
-├── Algorithms/
-└── DataStructures/
-    ├── Array/
-    │   ├── 01_Array_Traversal.cpp
-    │   ├── 02_Array_Insertion.cpp
-    │   ├── ...
-    │   └── 17_Matrix_Multiplication.cpp
-    └── LinkedList/
-```
-
-## Future updates to this learning journal
-
-As I continue the course, I will add new folders for linked lists, stacks, queues, trees, graphs, and other topics. I will also improve this README by adding personal notes, common mistakes, sample outputs, and reflections after completing each module.
-
-My plan is to keep the code simple and readable first. Once I understand the basic implementation, I will revisit the programs to improve their efficiency, error handling, and overall design.
+My next goal is to expand this repository topic by topic, keep the folder structure organized, add clear complexity notes to the source files, and record important observations from each lab. I want this repository to show both my code and the progress of my understanding.
 
 ## Author
 
 **Nazmus Sakib**
 
-- LinkedIn: [Nazmus Sakib](https://www.linkedin.com/in/nazmussakib247/)
-- GitHub: [Nazmussakib247](https://github.com/Nazmussakib247)
+- [LinkedIn: Nazmus Sakib](https://www.linkedin.com/in/nazmussakib247/)
+- [GitHub: Nazmussakib247](https://github.com/Nazmussakib247)
 
-**All rights Reserve by Nazmus Sakib.**
+All rights Reserve by Nazmus Sakib.
